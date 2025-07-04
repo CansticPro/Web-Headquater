@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Web Headquarters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .btn {
+      background-color: green;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+      width: 200px;
+      text-align: left;
+    }
+
+    .btn:hover {
+      background-color: red;
+    }
+
+    .btn:active {
+      background-color: blue;
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+
+    #popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #popup-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px gray;
+      z-index: 10000;
+    }
+
+    #popup-box h2 {
+      margin-top: 0;
+    }
+
+    #popup-box button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    #downloadLink {
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Popup -->
+<div id="popup">
+  <div id="popup-box">
+    <h2>Welcome!</h2>
+    <p>You are now accessing our Web Headquarters. Click below to enter.</p>
+    <button onclick="closePopup()">Enter</button>
+  </div>
+</div>
+
+<h1>🌐 Web Headquarters 🌐</h1>
+
+<!-- Buttons -->
+<button class="btn" onclick="window.open('https://www.youtube.com')">YouTube
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+</button>
+
+<button class="btn" onclick="window.open('https://www.google.com')">Google
+  <img src="https://www.google.com/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://chat.openai.com')">ChatGPT
+  <img src="https://chat.openai.com/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://translate.google.com')">Translate
+  <img src="https://www.gstatic.com/images/branding/product/1x/translate_48dp.png">
+</button>
+
+<button class="btn" onclick="window.open('https://maps.google.com')">Maps
+  <img src="https://maps.google.com/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://calendar.google.com')">Calendar
+  <img src="https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_16_2x.png">
+</button>
+
+<button class="btn" onclick="window.open('https://www.desmos.com/scientific')">Calculator
+  <img src="https://www.desmos.com/assets/img/apple-touch-icon.png">
+</button>
+
+<button class="btn" onclick="window.open('https://www.speedtest.net')">Speed Test
+  <img src="https://www.speedtest.net/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://www.weather.com')">Weather
+  <img src="https://www.weather.com/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://www.facebook.com')">Facebook
+  <img src="https://www.facebook.com/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://www.twitter.com')">Twitter
+  <img src="https://abs.twimg.com/favicons/twitter.2.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://web.telegram.org')">Telegram
+  <img src="https://web.telegram.org/favicon.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://mail.google.com')">Gmail
+  <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png">
+</button>
+
+<button class="btn" onclick="window.open('https://drive.google.com')">Drive
+  <img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png">
+</button>
+
+<button class="btn" onclick="window.open('https://zoom.us')">Zoom
+  <img src="https://st1.zoom.us/zoom.ico">
+</button>
+
+<button class="btn" onclick="window.open('https://web.whatsapp.com')">WhatsApp
+  <img src="https://web.whatsapp.com/favicon.ico">
+</button>
+
+<!-- Download Link -->
+<p id="downloadLink">
+  👉 <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" style="color: blue; text-decoration: underline;">
+    Click here to download the code
+  </a>
+</p>
+
+<footer>
+  🌟 Made by Sauleh Tayyab 🌟
+</footer>
+
+<script>
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
